@@ -1,0 +1,407 @@
+*, *::before, *::after {
+	box-sizing: border-box;;
+}
+
+::root {
+
+}
+
+a {
+	text-decoration: none;
+	color: limegreen;	
+}
+
+p {
+	font-size: 1em;
+
+}
+
+em {
+	font-size: 3em;
+	line-height: 1em;
+	color: darkgreen; 
+}
+
+#welcome_p {
+	font-size: 4vw;
+
+}
+
+.button {
+	margin-top: 1rem;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 2rem;
+	background-color: darkgreen;
+	overflow: hidden;
+}
+
+.button a {
+	padding: 1em 1em;
+	background-color: darkgreen;
+	font-size: 1.5em;
+	color: white;
+}
+
+.button a:hover, .button:hover {
+	font-weight: bold;
+	background-color: lightgreen;
+	color: darkgreen;
+
+}
+
+body {
+	margin: 0;
+	background-color: white;
+	color: darkslategrey;
+	line-height: 1.5em;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto 1fr 3rem;
+	grid-gap: 1em;
+	min-height: 100vh;
+	min-height: 100dvh;
+
+}
+
+header {
+	grid-column: 1 / -1;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: darkgreen 0.1rem solid;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#right_nav {
+	margin-left: auto;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li ul.dropdown {
+	position: absolute; 
+	z-index: 999; 
+	display: none; 
+}
+
+nav ul li ul.dropdown li {
+	display: block; 
+	background-color: white;
+}
+
+nav ul li a {
+	display: block;
+	color: darkgreen;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.8rem;
+}
+
+nav ul li a:hover {
+	background-color: lightgrey; 
+	color: white;
+}
+
+nav ul li:hover ul.dropdown {
+	display: block;
+	background-color: white;
+}
+
+#logo {
+	max-width: 14rem;
+	margin-right: 1rem;
+	grid-column: 1 / span 3;
+}
+
+h1 {
+	margin: 1em;
+	color: darkslategrey;
+	font-size: clamp(3rem, 10vw, 7rem);
+	font-weight: bold;
+	grid-column: 5 / 7;
+}
+
+div {
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+h2 {
+	display: inline-block;
+	margin: 0 0 2rem 0;
+	color: darkslategrey;
+	font-size: clamp(1rem, 10vw, 2rem);
+	font-family: cursive;
+	font-weight: 100;
+	text-align: center;
+}
+
+h2 a{
+	text-align: center;
+	padding: 0 1rem;
+	background-color: green;
+}
+
+
+h3 {
+	grid-column: 1 / span 2;
+}
+
+main {
+	grid-column: 2 / 12;
+}
+
+#search_form {
+	grid-column: 1 / span 4;
+}
+
+section {
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	grid-gap: 1rem;
+	text-align: center;
+}
+
+.products {
+	width: 12rem;
+	height: 16rem;
+	border: 0.1rem solid dimgrey;
+	line-height: 0;
+	padding-bottom: 2rem;
+}
+
+.photo_item  {
+	margin: 0;
+	height: 75%;
+	border: 1px green solid;
+}
+
+.photo_item img {
+		height: 100%;
+		width: 100%;
+}
+
+.article_content {
+	margin: 0;
+}
+
+.amount_content {
+	margin: 0;
+}
+
+.quantity {
+	height: 1rem;
+	width: 6ch;
+}
+
+#next_page {
+	grid-column: 1 / -1;
+}
+
+footer {
+	background-color: grey;
+	bottom: 0;
+	grid-column: 1 / -1;
+	text-align: center;
+
+}
+
+footer span {
+	text-align: right;
+}
+
+footer a {
+
+}
+
+
+form {
+	font-size: 1.5em;
+    margin: 3rem auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#about {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
+#about_txt {
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	font-size: 1.2em;
+	text-align: left;
+	grid-column: span 2 ;
+}
+
+#pic_about {
+  object-fit: cover;
+  width: 100%;
+  max-height: 90%;
+  grid-column: 3 / span 2;
+}
+
+#forgot {
+	border: red solid 2px;
+	margin: 0;
+	font-size: 1rem;
+}
+
+.services {
+	grid-column: span 2;
+}
+
+.services_pic {
+	width: 100%;
+}
+
+
+@media only screen and (max-width:768px) {
+
+body {
+	margin: 1em;
+}
+
+
+nav {
+	display: block;
+	align-items: center;
+	border-bottom: darkgreen 0.1rem solid;
+}
+
+nav ul li {
+	display: block;
+}
+
+nav ul li ul.dropdown {
+	position: relative; 
+	z-index: 999; 
+	 
+}
+
+nav ul li ul.dropdown li {
+	display: block; 
+	background-color: white;
+}
+
+nav ul li a {
+	display: block;
+	color: darkgreen;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.8rem;
+}
+
+nav ul li a:hover {
+	background-color: lightgrey; 
+	color: white;
+}
+
+nav ul li:hover ul.dropdown {
+	display: block;
+	background-color: white;
+}
+
+#logo {
+	width: 9rem;
+}
+
+
+
+/*
+GRID
+
+For the layout
+
+OLD OPTION?
+
+Width in vw ??
+Height in vh??
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; (or  repeat(3, 1fr);  HOW MANY?
+grid-template-rows: 5rem 1fr 1fr 3rem;  HOW MANY?
+box-sizing= border-box;
+padding: rem;
+gap: 3rem;
+
+Then define each element in each cell. The order is relative to the hmtl order.
+grid-column-start: 1;  (esta relacionado con las calles, cuenta desde afuera del layout)
+grid-column-end: 4; (or span 2;  in this way expand 2 more lines from start)
+
+grid-row-start: 2;
+grid-row-end: 4;  ESTO MERGE LAS CELDAS
+
+
+NEW - BETTER METHOD
+body {
+width??
+display: grid;
+box-sizing= border-box;
+padding: rem;
+gap: 3rem;
+margin: rem;
+grid-template-columns: 1fr 1fr 1fr; (or  repeat(3, 1fr);  HOW MANY?
+grid-template-rows: 5rem 1fr 1fr 3rem;  HOW MANY?
+grid-template-areas:
+	"header header header" (the position is on the col)
+	"sidebar main main"
+	"footer footer footer" (each line is a row)
+}
+
+header {
+	grid-area: header; (works like a ID)
+}
+........
+
+@media (max-width: 760px) {
+	body {
+		grid-template-columns: 1fr;
+		grid-template-rows: 10% 30% 30% 10%
+		grid-template-areas:
+			"header"
+			"nav"
+			"main"
+			"footer"
+}
+}	
+
+

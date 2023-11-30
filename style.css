@@ -1,0 +1,341 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 62.5%;
+
+}
+
+a {
+	font-size: 2.5rem;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+body {
+
+	font-size: 1.6rem;
+/*	background-image: url(img/homebg.gif);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-attachment: fixed;
+	background-position: top center;
+*/
+}
+
+main {
+}
+
+
+
+main section{
+	text-align: center;
+	font-size: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+	gap: 3rem;
+	padding-bottom: 10rem;
+}
+
+form {
+	font-size: 3rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: darkgreen 0.1rem solid;
+/*	background-color: darkgreen; */
+}
+
+nav ul {	
+	width: 100%;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin-top: 0.5rem;
+}
+
+ul li ul.dropdown {
+	position: absolute; 
+	z-index: 999; 
+	display: none; 
+}
+
+ul li ul.dropdown li {
+/*	background-color: darkgreen; */
+	display: block; 
+}
+
+nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: darkgreen; 
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 1.2rem 2rem;
+}
+
+nav ul li a:hover {
+	background-color: lightgrey; 
+	color: white;
+}
+
+ul li:hover ul.dropdown {
+	display: block;
+	width: auto;
+	background-color: white;
+}
+
+.right_nav {
+	text-align: right;
+}
+
+#logo {
+	margin-top:1rem ;
+	height: 4rem;
+/*	background-color: greenyellow; */
+}
+
+.welcome_p {
+	font-size: 6rem;
+	color: darkgrey;
+}
+
+.price_item {
+	font-size: 1.8rem;
+	color: darkslategrey;
+		margin-bottom: 0.5rem;
+
+}
+
+.aboutus {
+	display: block;
+	width: 100%;
+	border: red 2px solid;
+
+}
+
+.aboutus p {
+	display: flex;
+	margin: 7rem 0 0 2rem;
+	width: 60ch;
+	text-align: left;
+	font-size: 1.8rem;
+	border: red 2px solid;
+
+}
+
+#pic_about {
+	border: red 2px solid;
+	margin-left: 4rem;
+	padding: 20%;
+	height: 100%;
+	width: 10%;
+	float: right;
+	top: 0;
+}
+
+p em {
+	color: darkgreen;
+	font-weight: bold;
+	font-size: 13rem;
+}
+
+#bt_shop {
+	margin-top: 3rem;
+	border: 0px solid;
+	background-color: greenyellow;
+	border-radius: 3rem;
+	overflow: hidden;
+
+}
+
+#bt_shop a {
+	width: 14rem;
+	height: 6rem;
+	color: black;
+	font-weight: bold;
+	padding: 1.5rem 0rem;
+}
+
+#bt_shop:hover, #bt_shop a:hover {
+	background-color: lightgrey;
+	color: whitesmoke;
+}
+
+h1 {
+	font-size: 4rem;
+	color: darkgrey;
+}
+
+h2 {
+	font-size: 3rem;
+	color: darkolivegreen;
+	margin: 2rem;
+	text-align: center;
+}
+
+
+h3 {
+	font-size: 2rem;
+	color: darkgrey;
+}
+
+#search_form {
+	margin: 3rem 0;
+}
+
+#search_box {
+	font-size: 1.5rem;
+	display: inline-block;
+	width: 40rem;
+	padding: 1rem;
+	border: 2px solid slategrey;
+}
+
+#bt_search {
+  width: 8rem;
+  padding: 1rem;
+  background: darkgreen;
+  color: white;
+  font-size: 1.8rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+
+footer {
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	background-color: dimgrey;
+
+}
+
+footer span a {
+	padding: 1rem;	
+	color: skyblue;	
+}
+
+.products {
+	border: 0.4rem darkseagreen solid;
+	display: inline-block;
+	width: 20rem;
+	height: 30rem;
+
+	/* NEW METHOD 
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start; /*(solo funciona cuando se definio wrap y los elementos estan wraping) 
+	gap: 3rem; */
+}
+
+.item img {
+	width: 100%;
+	height: 20rem;
+}
+
+.title_item a{
+	font-size: 2.4rem;
+	font-weight: 300;
+	color: green;
+}
+
+#article_content {
+	display: inline-block;
+	width: auto;
+	position: absolute;
+	display: block;
+	text-align: right;
+	border: 2px red solid;
+}
+
+.quantity {
+	width: 4rem;
+	height: 3rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.bt_add {
+	display: inline-block;
+	background-color: slategrey;
+	border: 0;
+	border-radius: 1rem;
+	padding: 0.1rem;
+	margin-left: 1.5rem;
+
+}
+
+.bt_add a {
+	padding: 0.5rem;
+	color: white;
+	font-size:2rem;
+}
+
+.bt_add:hover {
+	background-color: green;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+
+nav {
+	display: block;
+	text-align: center;
+}
+
+nav ul li, #logo {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#logo {
+	display: block;
+	width: 100%;
+}
+
+.products {
+	display: block;
+	margin: auto;
+}
+
+#search_box{
+	padding: 3rem;
+}
+
+
+

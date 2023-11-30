@@ -1,0 +1,93 @@
+Esto es lo que me hizo el GPTrolo
+
+Location bar
+
+<!-- Location Bar Input Field -->
+<input type="text" id="locationInput" placeholder="Enter URL">
+
+<!-- Button to Navigate to the Entered URL -->
+<button onclick="navigateToURL()">Go</button>
+
+<!-- JavaScript function for navigating to the entered URL -->
+<script>
+  function navigateToURL() {
+    var inputElement = document.getElementById("locationInput");
+    var url = inputElement.value;
+
+    // Check if the input is not empty before navigating
+    if (url.trim() !== "") {
+      window.location.href = url;
+    }
+  }
+</script> 
+
+
+
+Toolbar
+
+<!-- Toolbar Buttons -->
+<button onclick="goBack()">Back</button>
+<button onclick="goForward()">Forward</button>
+<button onclick="printPage()">Print</button>
+<button onclick="stopLoading()">Stop</button>
+<button onclick="reloadPage()">Reload</button>
+<button onclick="openSearch()">Search</button>
+
+<!-- JavaScript functions for button actions -->
+<script>
+  function goBack() {
+    window.history.back();
+  }
+
+  function goForward() {
+    window.history.forward();
+  }
+
+  function printPage() {
+    window.print();
+  }
+
+  function stopLoading() {
+    window.stop();
+  }
+
+  function reloadPage() {
+    location.reload();
+  }
+
+  function openSearch() {
+    // Replace this with your actual search engine URL
+    window.location.href = "https://www.example.com/search";
+  } 
+</script>
+
+
+
+
+Status Bar
+
+<!-- Your Website Content Goes Here -->
+
+<!-- Shop Button with Status Bar -->
+<div id="shopButton" onmouseover="showStatus()">Shop</div>
+<div id="statusBar">
+  <p>Status: You have items in the cart!</p>
+</div>
+
+<!-- JavaScript to Show/Hide Status Bar -->
+<script>
+  function showStatus() {
+    var statusBar = document.getElementById("statusBar");
+    statusBar.style.display = "block";
+
+    // Simulate loading the cart status (you can replace this with your actual logic)
+    setTimeout(function() {
+      statusBar.style.display = "none";
+    }, 3000); // Hide the status bar after 3 seconds (adjust as needed)
+  }
+</script>
+
+The "Shop" button has an onmouseover event that triggers the showStatus() JavaScript function.
+The showStatus() function sets the display property of the status bar to "block," making it visible.
+The status bar initially has display: none; in the CSS to hide it.
+The JavaScript includes a setTimeout function to hide the status bar after a certain duration (simulating a notification that disappears after a few seconds). You can adjust the time as needed.

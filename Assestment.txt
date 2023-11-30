@@ -1,0 +1,39 @@
+Step 1: Build website navigation system according to business requirements by keeping in mind the following tips and suggestions:
+-Make hypertext obvious and streamline the navigation bar
+-Keep sidebars separate and put the navigation in a standard place
+-Make everything clear and simple for the user
+-Add the footer if required 
+-Make sure that the website navigation is fully responsive on mobile
+-Prioritise the pages
+-Limit the number of items on the menu
+-Create mega drop-down menus if necessary
+-Add a search bar
+-Label your menu clearly
+-Link the logo back to the homepage
+-Indicate what page the user is on
+-Ensure visitors can reach any page from any page
+
+Step 2: Confirm ease and accessibility of navigation on the website and provide different ways of searching
+-Menu bar
+-Scroll bar (NO SE PARA QUE)
+-Location bar
+-Status bar
+- Toolbar with following buttons:
+Command
+Function
+Home
+Opens or returns to starting page
+Back
+Takes you to the previous page
+Forward
+Takes you to the next page
+Print
+Prints current page
+Stop
+Stops loading a page
+Reload
+Refresh/redisplays current page
+Search
+Accesses search engine
+
+
